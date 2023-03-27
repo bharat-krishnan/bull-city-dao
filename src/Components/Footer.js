@@ -9,10 +9,10 @@ const  Footer = () => {
    
   return (
     
-    <Box sx = {{backgroundColor: '#EEE', color: '#1E1E24', padding: 2}}>
+    <Box sx = {{textAlign: 'center', backgroundColor: '#EEE', color: '#1E1E24', fontWeight: '100', padding: 2}}>
         <Container>
             Copyright @ BullCityDAO; All rights reserved.
-        </Container>
+        </Container> 
     </Box>
 
   );

@@ -6,6 +6,10 @@ import {Box,
         List, 
         Button} 
 from '@mui/material'
+
+import {Link as MuiLink} 
+from '@mui/material'
+
 import { styled } from '@mui/system';
 import { Link } from "react-router-dom";
 import {useTheme} from '@mui/material/styles'
@@ -84,7 +88,13 @@ const NavItems = ({navItems}) => {
                 </NavItem>))}
 
                 <NavButton>
-                    Apply
+                    <MuiLink 
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScZXqEpIjlWf8jjetVCGMkKwCh43df64zYLNutu3rz2_KCWqg/viewform" 
+                    target = '_blank' 
+                    underline="none">
+                    Apply 
+                    </MuiLink>
+                    
                 </NavButton>
 
             </NavItemsBox>
@@ -92,7 +102,12 @@ const NavItems = ({navItems}) => {
             <NavItemsBoxReverse>
                 
                 <NavButton>
-                    Apply
+                    <MuiLink 
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScZXqEpIjlWf8jjetVCGMkKwCh43df64zYLNutu3rz2_KCWqg/viewform" 
+                    target = '_blank' 
+                    underline="none">
+                    Apply 
+                    </MuiLink>
                 </NavButton>
 
             </NavItemsBoxReverse>

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, 
         Button,
-        Typography} 
+        Typography, Link} 
 from '@mui/material'
 import { styled } from '@mui/system';
 import {useTheme} from '@mui/material/styles'
@@ -102,7 +102,12 @@ const HeroTitle = () => {
             <Box sx={{ p: 2 }}></Box>
 
             <HeroButton>
+                <Link 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScZXqEpIjlWf8jjetVCGMkKwCh43df64zYLNutu3rz2_KCWqg/viewform" 
+                target = '_blank' 
+                underline="none">
                 Apply Now
+                </Link>
             </HeroButton>
         </Box>
     )
