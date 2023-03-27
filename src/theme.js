@@ -4,26 +4,26 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
     palette:{
         background: {
-            default: 
-            // '#1652f0'
-            '#ffffff'
-            // '#FAFAFB'
+            default: '#ffffff'
           },
         primary: {
-            main: '#ffffff'
+            main: '#ffffff',
+            contrastText: '#1E1E24'
+        },
+        nav: {
+            main: 'rgba(255, 255, 255, .8)',
+            contrastText: 'rgba(15, 13, 13, 0.6)'
         },
         secondary: {
-            main: '#1652f0',
+            main: '#1652f1',
             contrastText: '#ffffff'
         },
         grey: {
-            light: '#ffa726',
+            light: '#EEEEEE',
             main: '#f57c00',
-            dark: '#ef6c00',
+            dark: '#1E1E24',
             contrastText: 'rgba(0, 0, 0, 0.87)',
           },
-
-
     },
     typography: {
         fontFamily: [
@@ -45,11 +45,31 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     height: 130,
-                    minHeight: 130,
-                    disableGutter: true
+                    minHeight: 130
                 },
             }
-        }
+        },
+        MuiButtonBase: {
+            defaultProps: {
+              disableRipple: true, 
+            },
+        },
+        MuiCssBaseline: {
+            styleOverrides: `
+            body::-webkit-scrollbar {
+                display: none;
+              }
+            html {
+                overflow: hidden;
+                height: 100%;
+            }
+            
+            body {
+                height: 100%;
+                overflow: auto;
+            }
+            `,
+          },
 
     },
 
