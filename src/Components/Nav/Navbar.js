@@ -42,7 +42,7 @@ const Navbar = (props) => {
             />
           
           <Box  sx = {{flexGrow: '1'}}>
-            <NavLogo logo = {Logo} brand = 'BullCityDAO'/> 
+            <NavLogo logo = {logo} brand = 'BullCityDAO'/> 
           </Box>
           
           <NavItems navItems = {navItems}/>
