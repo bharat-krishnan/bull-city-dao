@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Box, 
         Grid,
         Container, Paper} 
 from '@mui/material'
 
 import { styled } from '@mui/system';
-import {useTheme} from '@mui/material/styles'
+// import {useTheme} from '@mui/material/styles'
 import Logo from '../../Images/logo.svg'
 
 import Subheading from '../Subheading'
@@ -25,7 +25,6 @@ const QuarterBreak = () => {
         animation: `${float} 3s infinite ease-in-out`,
     })
 
-    const [scale, setScale] = useState(1.1);
 
     return (
         <Box>
@@ -33,11 +32,11 @@ const QuarterBreak = () => {
             <Grid container spacing = {8} >
                 <Grid item md = {5}>
 
-                <Tilt scale = {scale} tiltAxis = 'y' tiltReverse={true} tiltAngleYInitial={30}>
+                <Tilt scale = {1.1} tiltAxis = 'y' tiltReverse={true} tiltAngleYInitial={30}>
                 <FloatingBox>
                 <Paper elevation= {0} sx = {{ display: {xs: 'none', md: 'flex'}, backgroundColor: "#EEE", justifyContent: 'center', borderStyle: 'solid', borderColor: '#EEE', borderWidth: 3, borderRadius: '50px'}}>
                     
-                    <img src={Logo} width="350" height="350" />
+                    <img alt = "big logo" src={Logo} width="350" height="350" />
 
                     
                     
@@ -68,7 +67,7 @@ const QuarterBreak = () => {
 
                 <Paper xs = {12} sx = {{ display: {xs: 'flex', md: 'none'}, backgroundColor: "#EEE", justifyContent: 'center',  marginTop: '50px', borderStyle: 'solid', borderColor: '#EEE', borderWidth: 3,borderRadius: '50px'}}>
                     
-                    <img src={Logo} width="350vw" height="200" />
+                    <img alt = 'mobile logo' src={Logo} width="350vw" height="200" />
                 </Paper>
 
                 </FloatingBox>

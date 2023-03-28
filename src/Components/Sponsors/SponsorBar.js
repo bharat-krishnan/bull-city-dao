@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 
-import {Box, Paper} from '@mui/material'
+import {Box} from '@mui/material'
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -57,7 +57,7 @@ const  SponsorBar = ({Logos, numItems}) => {
                     
                 <SwiperSlide key = {i}>
                     <SponsorBox>
-                        <img src = {logo} width = '175'/>
+                        <img alt = 'coinbase' src = {logo} width = '175'/>
                     </SponsorBox>
                 </SwiperSlide>
                 )

@@ -4,9 +4,8 @@ import {Box,
         Container,} 
 from '@mui/material'
 
-import { styled } from '@mui/system';
-import {useTheme} from '@mui/material/styles'
-import Logo from '../../Images/logo.svg'
+// import { styled } from '@mui/system';
+// import {useTheme} from '@mui/material/styles'
 
 import Subheading from '../Subheading'
 import ThirdBox from './ThirdBox'

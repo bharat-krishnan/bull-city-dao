@@ -12,7 +12,6 @@ import Subheading from '../Subheading'
 const  Sponsors = () => {
 
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 620;
 
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth)

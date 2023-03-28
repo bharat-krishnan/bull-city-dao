@@ -1,16 +1,11 @@
 import React from 'react'
 import {Box, 
-        Grid,
         Button,
-        Typography,
-        Container,Paper} 
+        Typography} 
 from '@mui/material'
 
 import { styled } from '@mui/system';
 import {useTheme} from '@mui/material/styles'
-import Logo from '../../Images/logo.svg'
-
-import Subheading from '../Subheading'
 
 import ArticleIcon from '@mui/icons-material/Article';
 
@@ -21,8 +16,8 @@ const ThirdBox = () => {
     const Icon = styled(Button)({
         padding: 10,
         color: theme.palette.secondary.main,
-        backgroundColor: theme.palette.primary.main,
         textTransform: 'none',
+        backgroundColor: '#EEE'
     })
 
     const Title = styled(Typography) ( {
@@ -54,7 +49,7 @@ const ThirdBox = () => {
         <ThirdBox>
             <Box sx = {{display: 'flex' , justifyContent: 'center'}}>
             <Icon>
-                <ArticleIcon fontSize="large"/>
+                <ArticleIcon  fontSize="large"/>
             </Icon>
             </Box>
         

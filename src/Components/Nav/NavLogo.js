@@ -46,7 +46,7 @@ const NavLogo = ({brand,logo}) => {
         <NavLogoBox to = '/'>
             
             <Logo>
-                <img src={logo} width="40" height="40" />
+                <img alt = 'logo' src={logo} width="40" height="40" />
             </Logo>
                
             <Brand >
