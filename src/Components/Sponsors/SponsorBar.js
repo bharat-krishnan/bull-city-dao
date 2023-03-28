@@ -55,7 +55,7 @@ const  SponsorBar = ({Logos, numItems}) => {
             (logo, i) => {
                 return (
                     
-                <SwiperSlide>
+                <SwiperSlide key = {i}>
                     <SponsorBox>
                         <img src = {logo} width = '175'/>
                     </SponsorBox>

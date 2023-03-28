@@ -56,27 +56,34 @@ const Hero = () => {
         <Container maxWidth = 'lg'>
             <Grid container>
 
-            <HeroTextBox xs = {12} md = {6}>
-                <HeroTitle/>
-            </HeroTextBox>
+            <Grid item xs = {12} md = {6}>
+                <HeroTextBox >
+                    <HeroTitle/>
+                </HeroTextBox>
+            </Grid>
 
-            <HeroImageBox xs = {6}>
-                <Box sx={{ p: 1 }}></Box>
-                <Lottie 
-                    options={defaultOptions}
-                    height={600}
-                    width={600}
-                />
-            </HeroImageBox>
+            <Grid item xs = {6}>
+                <HeroImageBox >
+                    <Box sx={{ p: 1 }}></Box>
+                    <Lottie 
+                        options={defaultOptions}
+                        height={600}
+                        width={600}
+                    />
+                </HeroImageBox>
+            </Grid>
 
-            <HeroImageBoxXS xs = {12}>
-                <Box sx={{ p: 2 }}></Box>
-                <Lottie 
-                    options={defaultOptions}
-                    height={350}
-                    width={350}
-                />
-            </HeroImageBoxXS>
+            <Grid item xs = {12}>
+                <HeroImageBoxXS >
+                    <Box sx={{ p: 2 }}></Box>
+                    <Lottie 
+                        options={defaultOptions}
+                        height={350}
+                        width={350}
+                    />
+                </HeroImageBoxXS>
+            </Grid>
+            
            
             </Grid>
         </Container>

@@ -87,29 +87,28 @@ const NavItems = ({navItems}) => {
                     {item}
                 </NavItem>))}
 
-                <NavButton>
-                    <MuiLink 
+                <MuiLink 
                     href="https://docs.google.com/forms/d/e/1FAIpQLScZXqEpIjlWf8jjetVCGMkKwCh43df64zYLNutu3rz2_KCWqg/viewform" 
                     target = '_blank' 
                     underline="none">
-                    Apply 
-                    </MuiLink>
-                    
-                </NavButton>
+                    <NavButton>           
+                        Apply 
+                    </NavButton>
+                </MuiLink>
 
             </NavItemsBox>
 
             <NavItemsBoxReverse>
-                
-                <NavButton>
-                    <MuiLink 
+
+                <MuiLink 
                     href="https://docs.google.com/forms/d/e/1FAIpQLScZXqEpIjlWf8jjetVCGMkKwCh43df64zYLNutu3rz2_KCWqg/viewform" 
                     target = '_blank' 
                     underline="none">
-                    Apply 
-                    </MuiLink>
-                </NavButton>
-
+                    <NavButton>
+                        Apply 
+                    </NavButton>
+                </MuiLink>
+                
             </NavItemsBoxReverse>
         </Box> 
     )

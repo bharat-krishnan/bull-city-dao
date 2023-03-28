@@ -33,9 +33,9 @@ const QuarterBreak = () => {
             <Grid container spacing = {8} >
                 <Grid item md = {5}>
 
-                <Tilt scale = {scale} tiltReverse={true} tiltAngleYInitial={30}>
+                <Tilt scale = {scale} tiltAxis = 'y' tiltReverse={true} tiltAngleYInitial={30}>
                 <FloatingBox>
-                <Paper elevation= {1} sx = {{ display: {xs: 'none', md: 'flex'}, backgroundColor: "#EEE", justifyContent: 'center', borderStyle: 'solid', borderColor: '#EEE', borderWidth: 3, borderRadius: '50px'}}>
+                <Paper elevation= {0} sx = {{ display: {xs: 'none', md: 'flex'}, backgroundColor: "#EEE", justifyContent: 'center', borderStyle: 'solid', borderColor: '#EEE', borderWidth: 3, borderRadius: '50px'}}>
                     
                     <img src={Logo} width="350" height="350" />
 

@@ -101,14 +101,14 @@ const HeroTitle = () => {
 
             <Box sx={{ p: 2 }}></Box>
 
-            <HeroButton>
-                <Link 
+            <Link 
                 href="https://docs.google.com/forms/d/e/1FAIpQLScZXqEpIjlWf8jjetVCGMkKwCh43df64zYLNutu3rz2_KCWqg/viewform" 
                 target = '_blank' 
                 underline="none">
-                Apply Now
-                </Link>
-            </HeroButton>
+                <HeroButton>
+                    Apply Now
+                </HeroButton>
+            </Link>
         </Box>
     )
 }
