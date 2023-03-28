@@ -7,7 +7,7 @@ import {Toolbar,
 
 import NavLogo from './NavLogo'
 import {NavItems, NavItemsXS} from './NavItems'
-import Logo from '../../Images/logo.svg'
+import logo from '../../Images/logo.svg'
 import {CustomDrawer, CustomIconButton} from './NavMobile'
 
 const drawerWidth = 240
