@@ -7,9 +7,7 @@ from '@mui/material'
 import { styled } from '@mui/system';
 import {useTheme} from '@mui/material/styles'
 
-import ArticleIcon from '@mui/icons-material/Article';
-
-const ThirdBox = () => {
+const ThirdBox = ({icon, title, description}) => {
 
     const theme = useTheme()
 
@@ -41,7 +39,8 @@ const ThirdBox = () => {
         borderWidth: 3,
         borderStyle: 'solid',
         flexGrow: 1,
-        backgroundColor: '#EEE'
+        backgroundColor: '#EEE',
+        height: 650
     })
 
 
@@ -49,7 +48,7 @@ const ThirdBox = () => {
         <ThirdBox>
             <Box sx = {{display: 'flex' , justifyContent: 'center'}}>
             <Icon>
-                <ArticleIcon  fontSize="large"/>
+                {icon}
             </Icon>
             </Box>
         
@@ -57,7 +56,7 @@ const ThirdBox = () => {
 
             <Box sx = {{display: 'flex' , justifyContent: 'center'}}>
             <Title>
-                Research
+                {title}
             </Title>
             </Box>
 
@@ -65,7 +64,7 @@ const ThirdBox = () => {
 
             <Box sx = {{display: 'flex' , justifyContent: 'center'}}>
             <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et orci at dolor elementum accumsan. Cras at sodales arcu, vitae varius erat. Nam molestie vitae magna ac molestie. Ut sapien metus, ullamcorper at efficitur et, volutpat et nisi. Nulla accumsan elementum lorem in placerat
+                {description}
             </Text>
             </Box>
   

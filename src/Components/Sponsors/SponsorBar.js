@@ -57,7 +57,7 @@ const  SponsorBar = ({Logos, numItems}) => {
                     
                 <SwiperSlide key = {i}>
                     <SponsorBox>
-                        <img alt = 'coinbase' src = {logo} width = '175'/>
+                        <img alt = 'sponsor' src = {logo} width = '175'/>
                     </SponsorBox>
                 </SwiperSlide>
                 )

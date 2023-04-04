@@ -87,16 +87,13 @@ const HeroTitle = () => {
                 
             <HeroHeader>
                 innovation in
-                blockchain.
+                blockchain
             </HeroHeader>
               
             <Box sx={{ p: 2 }}></Box>
 
             <HeroSubtitle>
-                Bull City DAO is a student-run DAO of 10+ 
-                members exploring and advancing web3 through 
-                investing in and supporting founders and doing
-                innovative research
+            Bull City DAO is a community-run organization exploring and advancing web3 through investing, research and engineering. 
             </HeroSubtitle>
 
             <Box sx={{ p: 2 }}></Box>

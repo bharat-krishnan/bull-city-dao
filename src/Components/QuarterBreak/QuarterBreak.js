@@ -52,7 +52,7 @@ const QuarterBreak = () => {
                         align = 'left'
                         section = 'Our Mission'
                         title = 'What are we doing this for?'
-                        subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et orci at dolor elementum accumsan. Cras at sodales arcu, vitae varius erat. Nam molestie vitae magna ac molestie. Ut sapien metus, ullamcorper at efficitur et, volutpat et nisi. Nulla accumsan elementum lorem in placerat.'
+                        subtitle = 'Duke University was the genesis of some of the greatest blockchain companies such as Coinbase, Paradigm, FEI Protocol, Phantom, and many others. We believe that the number of Duke student blockchain innovators will continue to grow, and we want to support these critical thinkers. The BullCityDAO will create a startup incubator, continuously fund research initiatives, grow a team of blockchain engineers, and seed a cryptocurrency fund to support the growing community.'
                     />
                 </Grid>
 

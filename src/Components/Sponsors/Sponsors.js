@@ -4,7 +4,8 @@ import React, {useState, useEffect} from 'react'
 import {Box,  Container,} 
 from '@mui/material'
 
-import sponsor from '../../Images/sponsor.webp'
+import pixelvault from '../../Images/pixelvault.png'
+import cess from '../../Images/cess.png'
 
 import SponsorBar from './SponsorBar'
 import Subheading from '../Subheading'
@@ -21,11 +22,15 @@ const  Sponsors = () => {
 
   const show = width > 900 ? 4: (width > 600 ? 3: 1)
 
-  const sponsors = 
-  [sponsor, sponsor, sponsor, sponsor, sponsor,
-   sponsor, sponsor, sponsor, sponsor, sponsor,
-   sponsor, sponsor, sponsor, sponsor, sponsor]
-  
+  const sponsors1 = 
+  [pixelvault, pixelvault, pixelvault, pixelvault, pixelvault,
+    pixelvault, pixelvault, pixelvault, pixelvault, pixelvault,
+    pixelvault, pixelvault, pixelvault, pixelvault, pixelvault]
+
+  const sponsors2 = 
+  [cess, cess, cess, cess, cess,
+    cess, cess, cess, cess, cess,
+    cess, cess, cess, cess, cess]
 
    
   return (
@@ -37,16 +42,16 @@ const  Sponsors = () => {
         align = 'center'
         section = 'Our Sponsors'
         title = 'The wonderful people who support us.'
-        subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et orci at dolor elementum accumsan. Cras at sodales arcu, vitae varius erat. Nam molestie vitae magna ac molestie. Ut sapien metus, ullamcorper at efficitur et, volutpat et nisi. Nulla accumsan elementum lorem in placerat.'
+        subtitle = ''
       />
  
       <Box sx={{ p: 2 }}></Box>
-        <SponsorBar numItems = {show} Logos = {sponsors}/>
+        <SponsorBar numItems = {show} Logos = {sponsors1}/>
         <Box sx={{ p: 2 }}></Box>
-        <SponsorBar numItems = {show}  Logos = {sponsors}/>
+        <SponsorBar numItems = {show}  Logos = {sponsors2}/>
         <Box sx={{ p: 2 }}></Box>
-        <SponsorBar numItems = {show}  Logos = {sponsors}/>
-        <Box sx={{ p: 2 }}></Box>
+        {/* <SponsorBar numItems = {show}  Logos = {sponsors}/>
+        <Box sx={{ p: 2 }}></Box> */}
         </Container>
     </Box>
 
