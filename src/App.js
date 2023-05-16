@@ -7,6 +7,8 @@ import theme from './theme'
 import Navbar from './Components/Nav/Navbar'
 
 import Home from './Pages/Home'
+import Research from './Pages/Research'
+import Content from './Pages/Content'
 import ComingSoon from './Pages/ComingSoon'
 
 const App = () => {
@@ -23,8 +25,8 @@ const App = () => {
            <Routes>
               <Route path="/">
                 <Route index element={<Home />} />
-                <Route path="about"  element = {<ComingSoon/>} />
-                <Route path="research" element = {<ComingSoon/>}/>
+                <Route path="content"  element = {<Content/>} />
+                <Route path="research" element = {<Research/>}/>
                 <Route path="incubator" element = {<ComingSoon/>}/>
                 <Route path="contact" element = {<ComingSoon/>}/>
               </Route>
