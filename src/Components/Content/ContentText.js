@@ -10,7 +10,7 @@ import {styled} from '@mui/system';
 import {useTheme} from '@mui/material/styles'
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
-const ContentText = ({align, title, author, about, link}) => {
+const ContentText = ({align, title, author, about, to}) => {
 
     const theme = useTheme()
 
@@ -60,7 +60,7 @@ const ContentText = ({align, title, author, about, link}) => {
      
         <Box sx = {{display: 'flex' , justifyContent: align}}>
         <MuiLink 
-            href="https://docs.google.com/forms/d/e/1FAIpQLScZXqEpIjlWf8jjetVCGMkKwCh43df64zYLNutu3rz2_KCWqg/viewform" 
+            href= {to}
             target = '_blank' 
             underline="none">
             <Link>
