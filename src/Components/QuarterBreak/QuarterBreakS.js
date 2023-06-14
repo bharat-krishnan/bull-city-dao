@@ -25,7 +25,7 @@ const QuarterBreakS = ({icon, title, subtitle }) => {
 
 
     return (
-        <Box>
+        <Box to = "google.com">
             <Container>
             <Grid container spacing = {8} >
                 <Grid item md = {2}/>

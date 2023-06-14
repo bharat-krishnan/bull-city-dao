@@ -9,7 +9,7 @@ from '@mui/material'
 
 import { TikTok } from "react-tiktok";
 
-const ContentItemVideo = ({title, author, about, to }) => {
+const ContentItemVideo = ({link1, link2, link3 }) => {
     
     return(
     <Box sx={{}}>
@@ -18,15 +18,15 @@ const ContentItemVideo = ({title, author, about, to }) => {
             <Grid container spacing={0}>
 
                 <Grid item xs={12} md={4}>
-                    <TikTok url="https://www.tiktok.com/@bitcoinbasic/video/7190025346824097030" />
+                    <TikTok url={link1} />
                 </Grid>
 
                 <Grid item xs={12} md={4}>
-                    <TikTok url="https://www.tiktok.com/@blockbarnews/video/7164072671603445038?lang=en" />
+                    <TikTok url= {link2} />
                 </Grid>
 
                 <Grid item xs={12} md={4}>
-                    <TikTok url="https://www.tiktok.com/@blockchain.future/video/7229088682857221381?lang=en" />
+                    <TikTok url= {link3}/>
                 </Grid>
 
             </Grid>
