@@ -26,8 +26,8 @@ const Home = () => {
 
                 <Sponsors/>
                 <Box sx={{ p: 6 }}></Box>
-                </Fade>
-                <Footer/>
+            </Fade>
+            <Footer/>
            
         </div>
     )

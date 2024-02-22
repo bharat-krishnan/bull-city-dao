@@ -1,6 +1,5 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
-import Footer from '../Components/Footer'
 
 import QuarterBreakS from '../Components/QuarterBreak/QuarterBreakS'
 import ContentItem from '../Components/Content/ContentItem'
@@ -18,7 +17,7 @@ const Research = () => {
             />
 
 
-        <ContentItem
+            <ContentItem
                 to = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4436697" 
                 title = "The Cost of Delay: Evidence from the Ethereum Transaction Fee Market"
                 author = "William Zhao"
@@ -40,7 +39,7 @@ const Research = () => {
                 about = 'The scalability problem that has faced Ethereum influenced a phase of innovation that brought us three new products: state channels, plasma channels, and then finally zk-rollups. State channels allow participants to make an arbitrary number of transactions off-chain, with the only on-chain transactions being the opening and closing of the channel. To open a channel, a multisig smart contract is deployed, and then users submit funds for lock-up to be used off-chain. The smart contracts then verify the submitted final state, and disperse the funds at closing. The state that is submitted is usually the last agreed-upon state of the channel that has both parties’ signatures. Beyond this final state, all other transactions can happen off-chain. This makes this method incredibly scalable, but it still has some limitations. Namely, the initial lock-up of capital, and a fixed number of participants that cannot be changed throughout its lifetime.  In response, Plasma channels were invented. They are managed by smart contracts that store merkle trees of the transactions that occur off-chain. At the end of every interval, an operator needs to submit a merkle tree that includes the new block of transactions from the interval. Blocks are not finalized till the end of a determined challenge period, usually 7 days...'
             />
 
-        <ContentItem
+            <ContentItem
                 to = "https://drive.google.com/file/d/1tRtHLKmOpLVqEi27_TQ1cLXLkT6hsJOx/view?usp=sharing" 
                 title = "Analysis of Ethereum"
                 author = "Maxwell Tardif"
@@ -48,7 +47,6 @@ const Research = () => {
             />
 
 
-            <Footer/>
             </Fade>
         </div>
     )

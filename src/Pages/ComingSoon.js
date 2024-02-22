@@ -7,12 +7,12 @@ const ComingSoon = () => {
     return(
         <div>
             <Fade>
-        <Subheading 
-            align = 'center'
-            section = '...'
-            title = 'This part of the website is still being built'
-            subtitle = 'Come back soon for updates!'
-        /> 
+            <Subheading 
+                align = 'center'
+                section = '...'
+                title = 'This part of the website is still being built'
+                subtitle = 'Come back soon for updates!'
+            /> 
         
         </Fade>
         </div>

@@ -1,39 +1,46 @@
-import React from 'react'
-import {Box, 
-        Grid,
-        Container} 
-from '@mui/material'
+import React from 'react';
+import { Box, Grid, Container } from '@mui/material';
 
-// import { styled } from '@mui/system';
-// import {useTheme} from '@mui/material/styles'
+const ContentItemVideo = ({ links }) => {
+  // Adjusting the style to ensure the iframes are not cut off.
+  const iframeContainerStyle = {
+    width: "100%",
+    height: "100vh", // Adjust this value as needed to prevent cutoff
+    position: "relative",
+    overflow: "hidden", // Ensures that the content does not overflow its box
+  };
 
-import { TikTok } from "react-tiktok";
+  const iframeStyle = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    border: 0
+  };
 
-const ContentItemVideo = ({link1, link2, link3 }) => {
-    
-    return(
-    <Box sx={{}}>
-
-        <Container>
-            <Grid container spacing={0}>
-
-                <Grid item xs={12} md={4}>
-                    <TikTok url={link1} />
-                </Grid>
-
-                <Grid item xs={12} md={4}>
-                    <TikTok url= {link2} />
-                </Grid>
-
-                <Grid item xs={12} md={4}>
-                    <TikTok url= {link3}/>
-                </Grid>
-
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <Container>
+        <Grid container spacing={2}>
+            {links.map((link, index) => (
+            <Grid item xs={12} md={4} key={index}>
+              <div style={iframeContainerStyle}>
+                <iframe
+                  title = {link}
+                  src= {link}
+                  style={iframeStyle}
+                  allowFullScreen
+                  scrolling="no"
+                  allow="encrypted-media;"
+                ></iframe>
+              </div>
             </Grid>
-
-
-        </Container>
+          ))}
+        </Grid>
+      </Container>
     </Box>
-)}
+  );
+};
 
-export default ContentItemVideo
+export default ContentItemVideo;
