@@ -88,7 +88,6 @@ const HeroTitle = () => {
             <HeroHeader>
                 innovation in
                 blockchain
-                Max Testing
             </HeroHeader>
               
             <Box sx={{ p: 2 }}></Box>
