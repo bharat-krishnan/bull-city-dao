@@ -24,8 +24,8 @@ const Research = () => {
             />
 
             <ContentItem
-                to = "Exploring the Potential of Prediction Markets: A Look into the Future of Decision Making" 
-                title = "The Cost of Delay: Evidence from the Ethereum Transaction Fee Market"
+                to = "https://drive.google.com/file/d/1K27cKjUVQoTI5RYdSM1Hk7FOKf_nns_y/view?usp=sharing" 
+                title = "Exploring the Potential of Prediction Markets: A Look into the Future of Decision Making"
                 author = "Christopher Johnson"
                 about = "I explore the transformative potential of prediction markets, emphasizing their role in enhancing decision-making through the wisdom of crowds. I dissect their operational mechanisms, highlighting the synergy between blockchain technology and these markets for creating transparent, decentralized, and accessible forecasting tools. Through examples, I illustrate how prediction markets surpass traditional forecasting methods in accuracy, fostering a more informed society. Moreover, I discuss the innovative concept of futarchies as a governance model, where speculative markets inform policy decisions, potentially revolutionizing democracy and organizational decision-making. Lastly, I address the challenges of regulation and the need for a nuanced approach to harness the full potential of prediction markets while mitigating risks."
             />
@@ -37,20 +37,12 @@ const Research = () => {
                 about = "Delaying a financial transaction can be costly, but the cost of delay is difficult to estimate in traditional finance. I exploit the unique data offering and market design of the Ethereum blockchain to estimate the cost of delaying financial transactions in decentralized finance (DeFi). I construct a dynamic auction model for the Ethereum transaction fee market that relates users' optimal transaction fee bids to their delay cost functions and network conditions, and I structurally estimate the delay cost functions for different users and transaction types. The average cost of delaying a transaction by one minute is 8.78 US dollars, but the distribution of delay costs is highly skewed to the right. Delay costs are higher for complex transactions and users who trade more frequently. I estimate that welfare loss due to network delay on Ethereum was 14.03 million US dollars per day in July 2021, and I apply the delay cost estimates to evaluate the welfare losses under alternative transaction fee mechanisms."
             />
 
-               
             <ContentItem
-                to = "https://iyusufali.xyz/writings/inclusion-lists" 
-                title = "Inclusion Lists"
-                author = "Ibrahim Yusufali"
-                about = 'Censorship resistance is a key feature of decentralization and has been an issue that has garnered a lot of support from the original crypto advocates. However until now, other points of the blockchain trilemma have been getting more attention, especially scalability, which has resulted in the growth of rollups, and app-chains. This has since changed from the shocking details of the Tornado Cash incident. On 8th August 2022, the Office of Foreign Assets cracked down on the privacy mixer Tornado Cash, and issued 44 Ethereum addresses on their publicly available Specially Designated Nationals List (SDN List). This essentially made it illegal for centralized crypto businesses, subject to US jurisdiction, to interact with these addresses. Mining and staking pools were greatly affected - the largest Ethereum miner based in the US, Ethermine, stopped including Tornado router transactions in its blocks a day after the SDN list was announced.It is this exact form of censorship that we aim to prevent through technology like Inclusion Lists. When there are gas-paying eligible transactions in the mempool, the builder should not be submitting blocks less than maximum size, unless they can fill the block completely with other transactions that may arise from exclusive order flow and are not present in the mempool...'
-            />
-
-            <ContentItem
-                to = "https://iyusufali.xyz/writings/decentralization-of-zk-rollups" 
-                title = "Decentralization of ZK Rollup"
-                author = "Ibrahim Yusufali"
-                about = 'The scalability problem that has faced Ethereum influenced a phase of innovation that brought us three new products: state channels, plasma channels, and then finally zk-rollups. State channels allow participants to make an arbitrary number of transactions off-chain, with the only on-chain transactions being the opening and closing of the channel. To open a channel, a multisig smart contract is deployed, and then users submit funds for lock-up to be used off-chain. The smart contracts then verify the submitted final state, and disperse the funds at closing. The state that is submitted is usually the last agreed-upon state of the channel that has both parties’ signatures. Beyond this final state, all other transactions can happen off-chain. This makes this method incredibly scalable, but it still has some limitations. Namely, the initial lock-up of capital, and a fixed number of participants that cannot be changed throughout its lifetime.  In response, Plasma channels were invented. They are managed by smart contracts that store merkle trees of the transactions that occur off-chain. At the end of every interval, an operator needs to submit a merkle tree that includes the new block of transactions from the interval. Blocks are not finalized till the end of a determined challenge period, usually 7 days...'
-            />
+                to = "https://drive.google.com/file/d/17SLWywa7G7dMaG3cEza9SY7eGPosx2KR/view?usp=sharing" 
+                title = "Tokenization of Assets "
+                author = "Chris and Taylor"
+                about = "In our comprehensive exploration of asset tokenization, we delve into how this innovative process is revolutionizing the investment landscape. Through digitizing physical assets into blockchain-based tokens, we unlock new opportunities for liquidity, democratize access to investment opportunities, and introduce a level of transparency and efficiency previously unattainable. Our presentation outlines the mechanisms, benefits, and challenges of tokenization, providing insights into its potential to reshape financial markets. We aim to equip stakeholders with the knowledge to navigate and leverage these emerging technologies for future growth."
+            />  
 
             <ContentItem
                 to = "https://drive.google.com/file/d/1tRtHLKmOpLVqEi27_TQ1cLXLkT6hsJOx/view?usp=sharing" 

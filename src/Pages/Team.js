@@ -82,7 +82,7 @@ const alumniCommittee = teamMembers.filter(member =>
             align='center'
             section='Our Team'
             title='BullCityDAO Leaders'
-            subtitle='The dedicated group leading BullCityDAO forwards.'
+            subtitle='The dedicated group leading BullCityDAO forward.'
           />
           <h2 style={{ textAlign: 'center' }}>Board of Directors</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', margin: '20px' }}>
