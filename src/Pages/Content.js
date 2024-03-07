@@ -6,6 +6,11 @@ import ContentItemVideo from '../Components/Content/ContentItemVideo';
 import TabNav from '../Components/Tabs/TabNav';
 import HeadphonesIcon from '@mui/icons-material/Headphones';
 import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
+import NewspaperIcon from '@mui/icons-material/Newspaper';
+
+
+//import MediaContentItem from '../Components/Content/MediaContentItem';
+//import { Container, Grid } from '@mui/material';
 
 const Content = () => {
   return (
@@ -41,6 +46,16 @@ const Content = () => {
                   "https://www.tiktok.com/embed/7221672852645465390"
                 ]}
               />
+              <ContentItemVideo
+                        links = {["https://www.tiktok.com/embed/7222484725531741482",
+                                "https://www.tiktok.com/embed/7223547790834634026" ,
+                                "https://www.tiktok.com/embed/7225023226156535083"]}
+                />
+                <ContentItemVideo
+                        links = {["https://www.tiktok.com/embed/7266575164811398446",
+                                "https://www.tiktok.com/embed/7265078162118282538" ,
+                                "https://www.tiktok.com/embed/7264345787147210027"]}
+                />
               {/* Add more ContentItemVideo components as needed */}
             </div>
           }
@@ -48,18 +63,33 @@ const Content = () => {
             <div>
               <QuarterBreakS
                 title="Our Media"
-                subtitle="This is the media section."
-                icon={<HeadphonesIcon color='secondary' sx={{ fontSize: "200px" }} />}
+                subtitle="See the media covereage our members have gotten."
+                icon={<NewspaperIcon color='secondary' sx={{ fontSize: "200px" }} />}
+              />
+              {/* Use the Grid system within this div to create a two-column layout for larger screens */}
+              <ContentItem
+                to="https://people.duke.edu/~charvey/Media/2024/B_February_22_2024.pdf"
+                title="Bloomberg: How Do You Profit From Bitcoin ETFs? Investors Face Dilemma"
+                author="Campbell Harvey, February 22, 2024"
+                about="Investors in Bitcoin ETFs face a collective action dilemma, where holding onto the assets theoretically benefits everyone but prevents individuals from realizing profits, exacerbating issues of blockchain development beyond speculation and creating a volatile market environment. Despite Bitcoin's tripled value since last year and over $5 billion in net inflows into ten U.S. ETFs, skepticism remains regarding the intrinsic value and long-term benefits of Bitcoin ETFs amidst concerns over market liquidity and supply shortages."
               />
               <ContentItem
-                to="https://drive.google.com/file/d/1ZagvTA92aV_aHX_5PvGlxNyRvk_6U4gq/view?usp=sharing"
-                title="#1 Duke's Blockchain Wizard"
-                author="Karam Bambawale"
-                about="A conversation with Duke's own prodigious blockchain engineer Giovanni Vignone, and those who have worked with him in the past."
+                to="https://people.duke.edu/~charvey/Media/2024/S_January_11_2024.pdf"
+                title="US regulator SEC authorises spot bitcoin ETFs in cryptocurrency breakthrough"
+                author="Campbell Harvey, 1/12/24"
+                about="The US Securities and Exchange Commission (SEC) has for the first time approved the trading of spot Bitcoin ETFs, marking a significant development for the digital-asset sector by broadening Wall Street and beyond access to the largest cryptocurrency. This decision represents a departure from over a decade of resistance from the SEC, ignited by a rally in cryptocurrency following BlackRock's unexpected ETF application and a court ruling that criticized the SEC's previous denial as arbitrary."
               />
-              {/* Add more ContentItem components as needed */}
+              <ContentItem
+                to="https://people.duke.edu/~charvey/Media/2023/C_December_27_2023.pdf"
+                title="CCN: Binance’s CZ Sees Wealth Growth Outpaced Coinbase and Gemini Founders’ in 2023 Despite Legal Issues"
+                author="Campbell Harvey,12/30/23,"
+                about="In 2023, despite facing legal challenges and a potential prison sentence, Changpeng Zhao (CZ), the former CEO of Binance Holdings Ltd., saw his wealth grow by nearly $25 billion, outpacing the wealth growth of Coinbase and Gemini founders. This increase, significantly influenced by Bitcoin's value surge of over 160% after a market downturn, marks a remarkable financial year for CZ, despite Binance's $4.3 billion in fines to US authorities and CZ's ongoing legal issues."
+              />
+              
+              
             </div>
           }
+          
         />
       </Fade>
     </div>
