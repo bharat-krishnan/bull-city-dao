@@ -10,6 +10,7 @@ import Home from './Pages/Home'
 import Research from './Pages/Research'
 import Content from './Pages/Content'
 import ComingSoon from './Pages/ComingSoon'
+import Team from './Pages/Team'
 
 const App = () => {
 
@@ -29,6 +30,7 @@ const App = () => {
                 <Route path="research" element = {<Research/>}/>
                 <Route path="incubator" element = {<ComingSoon/>}/>
                 <Route path="contact" element = {<ComingSoon/>}/>
+                <Route path="team" element = {<Team/>}/>
               </Route>
            </Routes>
           

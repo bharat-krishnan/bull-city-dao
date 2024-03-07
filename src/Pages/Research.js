@@ -16,6 +16,19 @@ const Research = () => {
                 icon = {<ArticleIcon color = 'secondary' sx={{ fontSize: "200px" }}/>}                
             />
 
+            <ContentItem
+                to = "https://drive.google.com/file/d/1W6eou8GDRm4Lvum1rBAxQJWDS8f4Mc9g/view?usp=sharing" 
+                title = "Crypto’s Lehman Moment?"
+                author = "Sujay Alluri"
+                about = "In this analysis, I recount the cataclysmic fall of FTX, drawing a parallel to the financial turmoil akin to Lehman Brothers, marking a pivotal moment in cryptocurrency history. I scrutinize the underlying factors, such as the misappropriation of client funds and opaque operations that precipitated this downfall, compounded by a precipitous bank run following Binance's withdrawal. Furthermore, I explore the consequent ripples through the crypto sector, emphasizing the urgent call for regulatory clarity and the gravitation towards self-custody and decentralized mechanisms to fortify trust and security. This event, I argue, could herald a new era of stringent oversight, akin to the regulatory aftermath of the 2008 financial debacle, shaping the future trajectory of digital assets."
+            />
+
+            <ContentItem
+                to = "Exploring the Potential of Prediction Markets: A Look into the Future of Decision Making" 
+                title = "The Cost of Delay: Evidence from the Ethereum Transaction Fee Market"
+                author = "Christopher Johnson"
+                about = "I explore the transformative potential of prediction markets, emphasizing their role in enhancing decision-making through the wisdom of crowds. I dissect their operational mechanisms, highlighting the synergy between blockchain technology and these markets for creating transparent, decentralized, and accessible forecasting tools. Through examples, I illustrate how prediction markets surpass traditional forecasting methods in accuracy, fostering a more informed society. Moreover, I discuss the innovative concept of futarchies as a governance model, where speculative markets inform policy decisions, potentially revolutionizing democracy and organizational decision-making. Lastly, I address the challenges of regulation and the need for a nuanced approach to harness the full potential of prediction markets while mitigating risks."
+            />
 
             <ContentItem
                 to = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4436697" 

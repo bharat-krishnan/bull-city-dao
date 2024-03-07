@@ -11,7 +11,7 @@ import logo from '../../Images/logo.svg'
 import {CustomDrawer, CustomIconButton} from './NavMobile'
 
 const drawerWidth = 240
-const navItems = ['Content', 'Research', 'Incubator']
+const navItems = ['Team','Content', 'Research', 'Incubator']
 
 const Navbar = (props) => {
 
