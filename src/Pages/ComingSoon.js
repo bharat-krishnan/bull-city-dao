@@ -5,7 +5,9 @@ import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import CohortInfo from '../Components/Incubator/CohortInfo';
 import CohortCard from '../Components/Incubator/CohortCard';
 import Grid from '@mui/material/Grid';
-import imageSrc from '../Images/sponsor.webp';
+import imageSrc from '../Images/Octalne.png';
+import Octalne from '../Images/Octalne.png'
+import AnonID from '../Images/AnonID.png'
 import { useTheme, useMediaQuery } from '@mui/material';
 
 const ComingSoon = () => {
@@ -31,23 +33,13 @@ const ComingSoon = () => {
         }}>
           {/* Example usage of CohortCard */}
           <CohortCard 
-            image={imageSrc}
-            title="Cohort Project Title"
+            image={Octalne}
+            title="Octane Security"
             paragraph="Description of the cohort project."
           />
           <CohortCard 
-            image={imageSrc}
-            title="Cohort Project Title"
-            paragraph="Description of the cohort project."
-          />
-          <CohortCard 
-            image={imageSrc}
-            title="Cohort Project Title"
-            paragraph="Description of the cohort project."
-          />
-          <CohortCard 
-            image={imageSrc}
-            title="Cohort Project Title"
+            image={AnonID}
+            title="AnonID"
             paragraph="Description of the cohort project."
           />
           {/* Add more CohortCard components as needed */}
