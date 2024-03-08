@@ -4,10 +4,14 @@ import QuarterBreakS from '../Components/QuarterBreak/QuarterBreakS';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import CohortInfo from '../Components/Incubator/CohortInfo';
 import CohortCard from '../Components/Incubator/CohortCard';
-import Grid from '@mui/material/Grid'; // Import Grid here
+import Grid from '@mui/material/Grid';
 import imageSrc from '../Images/sponsor.webp';
+import { useTheme, useMediaQuery } from '@mui/material';
 
 const ComingSoon = () => {
+  const theme = useTheme();
+  const matchesMD = useMediaQuery(theme.breakpoints.up('md'));
+
   return (
     <div>
       <Fade>
@@ -20,7 +24,11 @@ const ComingSoon = () => {
           header="Cohort #1"
           paragraph="This is our first first first cohort. Insert more text here about the cohort, why we picked these teams, and what they are doing."
         />
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{ 
+          px: matchesMD ? '250px' : '16px', // Adjust this based on `CohortInfo` padding
+          width: '100%', 
+          margin: '0 auto' 
+        }}>
           {/* Example usage of CohortCard */}
           <CohortCard 
             image={imageSrc}
