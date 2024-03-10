@@ -35,12 +35,12 @@ const ComingSoon = () => {
           <CohortCard 
             image={Octalne}
             title="Octane Security"
-            paragraph="Description of the cohort project."
+            paragraph="Octane is a developer-first platform to battle-test smart contracts with cutting-edge Al. Our suite of tools helps customers find vulnerabilities quickly, without complicated setup and dev onboarding."
           />
           <CohortCard 
             image={AnonID}
             title="AnonID"
-            paragraph="Description of the cohort project."
+            paragraph="Anon ID empowers businesses to securely reduce onboarding friction and risk with an AI and Blockchain network that delivers verifiable proofs of user identity and ownership without private personal information."
           />
           {/* Add more CohortCard components as needed */}
         </Grid>
