@@ -1,24 +1,33 @@
 import React from 'react';
-import { Card, CardContent, Typography, Grid, Box } from '@mui/material';
+import { Card, CardContent, Typography, Grid } from '@mui/material';
 
-const CohortCard = ({ image, title, paragraph }) => {
+const CohortCard = ({ title, paragraph, link }) => {
+  // Function to handle card click
+  const handleCardClick = () => {
+    window.location.href = link; // Redirects to the given link
+  };
+
   return (
     <Grid item xs={12} md={6}>
-      <Card sx={{ backgroundColor: '#EEE', mb: 2 }}>
-        <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start' }}>
-          <Box sx={{ width: 100, height: 100, overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            {/* Maintaining the image aspect ratio while ensuring it's contained within a fixed size box */}
-            <img src={image} alt={title} style={{ width: '100%', height: 'auto' }} />
-          </Box>
-          <CardContent sx={{ flexGrow: 1 }}>
-            <Typography gutterBottom variant="h5" component="div">
-              {title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {paragraph}
-            </Typography>
-          </CardContent>
-        </Box>
+      <Card 
+        sx={{ 
+          backgroundColor: '#EEE', 
+          mb: 2, 
+          transition: 'transform 0.3s ease-in-out',
+          '&:hover': {
+            transform: 'scale(1.05)', // Slightly enlarges the card on hover
+          },
+        }}
+        onClick={handleCardClick} // Adding click handler
+      >
+        <CardContent>
+          <Typography variant="h5" component="div">
+            {title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {paragraph}
+          </Typography>
+        </CardContent>
       </Card>
     </Grid>
   );
