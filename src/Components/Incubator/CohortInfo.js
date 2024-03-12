@@ -29,12 +29,16 @@ const CohortInfo = ({ header, paragraph }) => {
 
   return (
     <StyledContainer theme={theme} padding={padding}>
-      <StyledHeader theme={theme}>
-        {header}
-      </StyledHeader>
-      <StyledParagraph theme={theme}>
-        {paragraph}
-      </StyledParagraph>
+      {header && (
+        <StyledHeader theme={theme}>
+          {header}
+        </StyledHeader>
+      )}
+      {paragraph && (
+        <StyledParagraph theme={theme}>
+          {paragraph}
+        </StyledParagraph>
+      )}
     </StyledContainer>
   );
 }

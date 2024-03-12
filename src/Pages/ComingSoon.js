@@ -24,7 +24,7 @@ const ComingSoon = () => {
         />
         <CohortInfo 
           header="Cohort #1"
-          paragraph="This is our first first first cohort. Insert more text here about the cohort, why we picked these teams, and what they are doing."
+          
         />
         <Grid container spacing={2} sx={{ 
           px: matchesMD ? '250px' : '16px', // Adjust this based on `CohortInfo` padding
