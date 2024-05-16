@@ -12,7 +12,7 @@ import SujayAlluri from '../Images/SujayAlluri.jpeg';
 import JaviCocero from '../Images/JavierC.jpeg';
 import FrankBolella from '../Images/FrankBolella.jpeg';
 import MaxwellTardif from '../Images/MaxwellTardif.jpeg';
-import MaxMurakamiMoses from '../Images/MaxMurakamiMoses.jpg';
+import MaxMurakamiMoses from '../Images/MaxMurakamiMoses.jpeg';
 import DevonKnox from '../Images/DevonKnox.jpeg';
 import ColeFtizgerald from '../Images/ColeFitzGerald.jpeg';
 import YashPatil from '../Images/YashPatil.jpeg';
