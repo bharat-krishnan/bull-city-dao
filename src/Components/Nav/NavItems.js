@@ -83,7 +83,7 @@ const NavItems = ({navItems}) => {
             <NavItemsBox>
 
                 {navItems.map((item) => (
-                <NavItem  key = {item} to = {item}>
+                <NavItem key={item} to={item === 'About' ? '/' : item.toLowerCase()}>
                     {item}
                 </NavItem>))}
 
@@ -134,7 +134,7 @@ const NavItemsXS = ({navItems}) => {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton >
-                <NavItem  key = {item} to = {item}>
+                <NavItem key={item} to={item === 'About' ? '/' : item.toLowerCase()}>
                     <ListItemText primary={item} />
                 </NavItem>
             </ListItemButton>

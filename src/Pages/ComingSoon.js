@@ -1,3 +1,5 @@
+//This has become the incubator page
+
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import QuarterBreakS from '../Components/QuarterBreak/QuarterBreakS';
@@ -9,6 +11,7 @@ import imageSrc from '../Images/Octalne.png';
 import Octalne from '../Images/Octalne.png'
 import AnonID from '../Images/AnonID.png'
 import { useTheme, useMediaQuery } from '@mui/material';
+
 
 const ComingSoon = () => {
   const theme = useTheme();

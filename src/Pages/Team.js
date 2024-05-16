@@ -2,6 +2,8 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Subheading from '../Components/Subheading';
 import TeamMember from '../Components/TeamMember';
+import QuarterBreakS from '../Components/QuarterBreak/QuarterBreakS';
+import GroupIcon from '@mui/icons-material/Group';
 
 // Import images - Add or remove imports according to your team members
 import CamHarvey from '../Images/CamHarvey.jpeg';
@@ -74,59 +76,57 @@ const alumniCommittee = teamMembers.filter(member =>
   member.position.includes('Alumni Committee'));
 
 
-  const Team = () => {
-    return (
-      <div>
-        <Fade>
-          <Subheading
-            align='center'
-            section='Our Team'
-            title='BullCityDAO Leaders'
-            subtitle='The dedicated group leading BullCityDAO forward.'
-          />
-          <h2 style={{ textAlign: 'center' }}>Board of Directors</h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', margin: '20px' }}>
-            {boardOfDirectors.map((member, index) => (
-              <Fade key={index} bottom delay={index * 100}>
-                <TeamMember 
-                  name={member.name} 
-                  position={member.position} 
-                  image={imageMap[member.name]}
-                  linkedinUrl={linkedinURLs[teamMembers.findIndex(tm => tm.name === member.name)]} // Fetch the LinkedIn URL using the index
-                />
-              </Fade>
-            ))}
-          </div>
-          <h2 style={{ textAlign: 'center' }}>Undergraduate Team</h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', margin: '20px' }}>
-            {undergraduateTeam.map((member, index) => (
-              <Fade key={index} bottom delay={index * 100}>
-                <TeamMember 
-                  name={member.name} 
-                  position={member.position} 
-                  image={imageMap[member.name]}
-                  linkedinUrl={linkedinURLs[teamMembers.findIndex(tm => tm.name === member.name)]} // Fetch the LinkedIn URL using the index
-                />
-              </Fade>
-            ))}
-          </div>
-          <h2 style={{ textAlign: 'center' }}>Alumni Committee</h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', margin: '20px' }}>
-            {alumniCommittee.map((member, index) => (
-              <Fade key={index} bottom delay={index * 100}>
-                <TeamMember 
-                  name={member.name} 
-                  position={member.position} 
-                  image={imageMap[member.name]}
-                  linkedinUrl={linkedinURLs[teamMembers.findIndex(tm => tm.name === member.name)]} // Fetch the LinkedIn URL using the index
-                />
-              </Fade>
-            ))}
-          </div>
-        </Fade>
-      </div>
-    );
-  }
-  
-  export default Team;
-  
+const Team = () => {
+  return (
+    <div>
+      <Fade>
+        <QuarterBreakS
+          title="Our Team"
+          subtitle="The dedicated group leading BullCityDAO forward."
+          icon={<GroupIcon color='secondary' sx={{ fontSize: '200px' }} />}
+        />
+        <h2 style={{ textAlign: 'center' }}>Board of Directors</h2>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', margin: '20px' }}>
+          {boardOfDirectors.map((member, index) => (
+            <Fade key={index} bottom delay={index * 100}>
+              <TeamMember 
+                name={member.name} 
+                position={member.position} 
+                image={imageMap[member.name]}
+                linkedinUrl={linkedinURLs[teamMembers.findIndex(tm => tm.name === member.name)]} // Fetch the LinkedIn URL using the index
+              />
+            </Fade>
+          ))}
+        </div>
+        <h2 style={{ textAlign: 'center' }}>Undergraduate Team</h2>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', margin: '20px' }}>
+          {undergraduateTeam.map((member, index) => (
+            <Fade key={index} bottom delay={index * 100}>
+              <TeamMember 
+                name={member.name} 
+                position={member.position} 
+                image={imageMap[member.name]}
+                linkedinUrl={linkedinURLs[teamMembers.findIndex(tm => tm.name === member.name)]} // Fetch the LinkedIn URL using the index
+              />
+            </Fade>
+          ))}
+        </div>
+        <h2 style={{ textAlign: 'center' }}>Alumni Committee</h2>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', margin: '20px' }}>
+          {alumniCommittee.map((member, index) => (
+            <Fade key={index} bottom delay={index * 100}>
+              <TeamMember 
+                name={member.name} 
+                position={member.position} 
+                image={imageMap[member.name]}
+                linkedinUrl={linkedinURLs[teamMembers.findIndex(tm => tm.name === member.name)]} // Fetch the LinkedIn URL using the index
+              />
+            </Fade>
+          ))}
+        </div>
+      </Fade>
+    </div>
+  );
+}
+
+export default Team;
