@@ -21,10 +21,9 @@ const Home = () => {
         <TripleBreak />
         <Box sx={{ p: 6 }}></Box>
 
-        <Sponsors />
+        <ContentSection />
         <Box sx={{ p: 6 }}></Box>
       </Fade>
-      <ContentSection /> {/* Add the content section here */}
       <Footer />
     </div>
   );

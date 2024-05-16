@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import Footer from '../Components/Footer';
 import QuarterBreakS from '../Components/QuarterBreak/QuarterBreakS';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import Sponsors from '../Components/Sponsors/Sponsors';
 
 const Support = () => {
   return (
@@ -32,7 +33,11 @@ const Support = () => {
             </CardContent>
           </Card>
         </Box>
+        <Box sx={{ mt: 6 }}>
+          <Sponsors />
+        </Box>
       </Fade>
+      
       <Footer />
     </div>
   );
