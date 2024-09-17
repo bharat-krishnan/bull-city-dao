@@ -45,7 +45,7 @@ const TripleBreak = () => {
                 <ThirdBox 
                     icon = {<CodeIcon  fontSize="large"/>} 
                     title = "Engineering" 
-                    description = "The engineering team plans to develop DAO tools using the investments made by the Devil DAO. The partners of Devil DAO will have the chance to collaborate with our engineering team on a project-by-project basis, which will aid these firms in identifying potential hires and outsourcing their development needs. These projects will concentrate on blockchain development and the utilization of blockchains in various applications." />
+                    description = "The engineering team plans to develop DAO tools using the investments made by the BullCityDAO. The partners of BullCityDAO will have the chance to collaborate with our engineering team on a project-by-project basis, which will aid these firms in identifying potential hires and outsourcing their development needs. These projects will concentrate on blockchain development and the utilization of blockchains in various applications." />
 
                 </Grid>
 

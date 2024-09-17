@@ -36,16 +36,17 @@ const imageMap = {
 const teamMembers = [
   { name: 'Cam Harvey', position: 'President' },
   { name: 'Giovanni Vignone', position: 'Vice-President' },
-  { name: 'Sujay Alluri', position: 'Treasurer and Secretary' },
+  { name: 'Maxwell Tardif', position: 'Treasurer and Secretary' }, // Updated position
+  { name: 'Sujay Alluri', position: 'Alumni Leader' }, // Updated position
   { name: 'Javi Cocero', position: 'Alumni Leader' },
   { name: 'Frank Bolella', position: 'Alumni Leader' },
-  { name: 'Maxwell Tardif', position: 'Undergraduate Leader' },
-  { name: 'Max Murakami-Moses', position: 'Undergraduate Leader' },
+  { name: 'Max Murakami-Moses', position: 'Co-president' },
   { name: 'Devon Knox', position: 'Student Researcher/Engineer' },
   { name: 'Cole Ftizgerald', position: 'Student Researcher/Engineer' },
-  { name: 'Yash Patil', position: 'Alumni Committee' },
-  { name: 'Manmit Singh', position: 'Alumni Committee' },
+  { name: 'Yash Patil', position: 'Alumni Committee Member' },
+  { name: 'Manmit Singh', position: 'Alumni Committee Member' },
 ];
+
 
 const linkedinURLs = [
     'https://www.linkedin.com/in/camharvey/', // Example URL for Cam Harvey
@@ -62,18 +63,27 @@ const linkedinURLs = [
   ];
   
 
-const boardOfDirectors = teamMembers.filter(member =>
-  member.position.includes('President') ||
-  member.position.includes('Vice-President') ||
-  member.position.includes('Treasurer') ||
-  member.position.includes('Alumni Leader'));
+  const boardOfDirectors = teamMembers.filter(
+    member =>
+      member.position === 'President' ||
+      member.position === 'Vice-President' ||
+      member.position === 'Treasurer and Secretary'
+  );
+  
+  
 
-const undergraduateTeam = teamMembers.filter(member =>
-  member.position.includes('Undergraduate Leader') ||
-  member.position.includes('Student Researcher/Engineer'));
+  const undergraduateTeam = teamMembers.filter(
+    member =>
+      member.position === 'Undergraduate Leader' ||
+      member.position === 'Student Researcher/Engineer' ||
+      member.position === 'Co-president'
+  );
+  
 
-const alumniCommittee = teamMembers.filter(member =>
-  member.position.includes('Alumni Committee'));
+  const alumniCommittee = teamMembers.filter(member =>
+    member.position.includes('Alumni Committee') || member.position === 'Alumni Leader'
+  );
+  
 
 
 const Team = () => {
@@ -111,7 +121,7 @@ const Team = () => {
             </Fade>
           ))}
         </div>
-        <h2 style={{ textAlign: 'center' }}>Alumni Committee</h2>
+        <h2 style={{ textAlign: 'center' }}>Alumni Board</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', margin: '20px' }}>
           {alumniCommittee.map((member, index) => (
             <Fade key={index} bottom delay={index * 100}>
